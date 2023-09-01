@@ -4,7 +4,7 @@ import { useFonts } from "expo-font";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import RoomScreen from "./src/screen/room/room.screen";
 import { theme } from "./src/infrastructure/theme";
-
+import { Navigation } from "./src/infrastructure/navigation";
 export default function App() {
   const [fontsLoaded] = useFonts({
     "Greed-Bold": require("./assets/fonts/greedfamily/Greed-Bold.otf"),
@@ -23,8 +23,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <SafeAreaView style={styles.container}>
-        <RoomScreen />
-        {/* <StatusBar style="auto" /> */}
+        <Navigation />
       </SafeAreaView>
     </ThemeProvider>
   );
