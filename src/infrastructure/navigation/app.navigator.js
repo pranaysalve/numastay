@@ -21,24 +21,24 @@ const Navigator = () => {
     <>
       <Tab.Navigator>
         <Tab.Screen
-          name="Home"
+          name="HomeScreen"
           component={HomeNavigator}
           options={{ headerShown: false }}
         />
         <Tab.Screen
-          name="Location"
+          name="LocationScreen"
           component={LocationNavigator}
-          options={{ headerShown: true }}
+          options={{ headerShown: false }}
         />
         <Tab.Screen
-          name="MyTrips"
+          name="MyTripsScreen"
           component={MyTripsNavigator}
-          options={{ headerShown: true }}
+          options={{ headerShown: false }}
         />
         <Tab.Screen
-          name="Account"
+          name="AccountScreen"
           component={AccountNavigator}
-          options={{ headerShown: true }}
+          options={{ headerShown: false }}
         />
       </Tab.Navigator>
     </>
